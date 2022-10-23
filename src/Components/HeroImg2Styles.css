@@ -1,0 +1,39 @@
+.hero-img{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 70vh;
+    position: relative;
+}
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img::before{
+    content: "";
+    background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.hero-img h1{
+   font-size: 2.4rem;
+
+}
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+@media screen and (max-width:640px) {
+    .hero-img p{
+        font-size: 1.5rem;
+    }  
+}

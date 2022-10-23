@@ -1,0 +1,35 @@
+.about{
+    width: 100%;
+    margin:3rem 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+
+}
+.left{
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    max-width:350px ;
+}
+.about .left p{
+    margin: 1.2rem 0;
+}
+.about .right{
+    max-width: 700px;
+
+}
+.right .img-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    position: relative;
+    align-items: center;
+    text-align: center
+    ;
+}
+.right .img{
+    max-width: 90%;
+    border: 1px solid #333;
+}
