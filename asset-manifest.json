@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.23709a32.css",
-    "main.js": "/static/js/main.568dfff4.js",
+    "main.js": "/static/js/main.adaeb264.js",
     "static/js/787.4da6c86e.chunk.js": "/static/js/787.4da6c86e.chunk.js",
     "static/media/cricinfo.png": "/static/media/cricinfo.9461ab5a88228458dc4b.png",
     "static/media/mind.png": "/static/media/mind.be0edaebeaa1017f06ad.png",
     "index.html": "/index.html",
     "main.23709a32.css.map": "/static/css/main.23709a32.css.map",
-    "main.568dfff4.js.map": "/static/js/main.568dfff4.js.map",
+    "main.adaeb264.js.map": "/static/js/main.adaeb264.js.map",
     "787.4da6c86e.chunk.js.map": "/static/js/787.4da6c86e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23709a32.css",
-    "static/js/main.568dfff4.js"
+    "static/js/main.adaeb264.js"
   ]
 }
