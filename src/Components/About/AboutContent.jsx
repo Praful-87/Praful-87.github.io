@@ -1,30 +1,34 @@
 import "./AboutContent.css";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const AboutContent = () => {
   return (
     <div className="about">
       <div className="left">
-        <h1>Who I am</h1>
+        <h1>Who I am?</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-          voluptas.
+          Hi, I am a react developer with with skilled in building resposive
+          webpags
         </p>
+        <Link className="btn" to="contact">
+          Contact
+        </Link>
       </div>
-      <Link className="btn">Contact</Link>
+
       <div className="right">
         <div className="img-container">
           <div className="img-stack top">
             <img
-              src="https://miro.medium.com/max/828/1*dLaDL-lSN0iprzmOpmM7zQ.png"
-              alt=""
+              className="img"
+              src="https://www.fingent.com/wp-content/uploads/img-1.jpg"
+              alt="ad"
             />
           </div>
           <div className="img-stack bottom">
             <img
               className="img"
-              src="https://res.cloudinary.com/proxify-io/image/upload/c_fill,f_auto,q_auto,dpr_auto,w_1440,h_600/v1/cms/images/articles/0S2oGmon8xrcPwq6heTRyh3DayYVh6e2ftTjGuDA.jpg"
+              src="https://s.tmimgcdn.com/scr/1200x750/172900/foodtech-food-delivery-amp-restaurant-react-js-admin-dashboard_172964-original.jpg"
               alt="top img"
             />
           </div>

@@ -1,11 +1,10 @@
 import React from "react";
-import AboutContent from "../Components/AboutContent";
-import HeroImg2 from "../Components/HeroImg2";
-
+import HeroImage3 from "../Components/hero/HeroImage3";
+import AboutContent from "../Components/About/AboutContent";
 const About = () => {
   return (
-    <div>
-      <HeroImg2
+    <div id="about">
+      <HeroImage3
         heading="ABOUT."
         text="I am a friendly full stack web developer"
       />

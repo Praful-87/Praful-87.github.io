@@ -27,8 +27,13 @@
 }
 .nav-menu li a{
     font-size: 1.2rem;
+    cursor: pointer;
     margin-right: 30px;
     font-weight: 500;
+}
+.nav-menu li a:hover{
+    text-decoration: underline;
+    /* color: red; */
 }
 @media screen and (max-width:1040px){
     .nav-menu{
@@ -41,7 +46,7 @@
         position: absolute;
         top: 0;
         left: -100%;
-        transition: 0.5s;
+        transition: 0.3s;
         z-index: -3;
 
 

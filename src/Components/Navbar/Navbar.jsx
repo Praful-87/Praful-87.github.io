@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useAsyncError } from "react-router-dom";
+import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import "./NavbarStyles.css";
@@ -18,21 +18,39 @@ const Navbar = () => {
   console.log("nav renderd");
   return (
     <div className={color ? "header header-bg" : "header"}>
-      <Link to="/">
+      <Link to="">
         <h1>Portfolio</h1>
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <Link to="/">Home</Link>
+          <Link onClick={handleClick} to="home" smooth={true} duration={1000}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <Link
+            onClick={handleClick}
+            to="projects"
+            smooth={true}
+            duration={1000}
+          >
+            Projects
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link onClick={handleClick} to="about" smooth={true} duration={1000}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/contacts">Contacts</Link>
+          <Link
+            onClick={handleClick}
+            to="contact"
+            smooth={true}
+            duration={1000}
+          >
+            Contacts
+          </Link>
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>

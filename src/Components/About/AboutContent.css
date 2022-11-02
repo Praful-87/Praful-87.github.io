@@ -1,6 +1,6 @@
 .about{
     width: 100%;
-    margin:3rem 0 ;
+    margin:3rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,7 @@
     height: 100%;
 
 }
-.left{
+.about .left{
     text-align: center;
     margin: auto;
     padding: 1rem;
@@ -19,6 +19,7 @@
 }
 .about .right{
     max-width: 700px;
+    /* border: 1px solid red; */
 
 }
 .right .img-container{
@@ -26,10 +27,20 @@
     grid-template-columns: repeat(12,1fr);
     position: relative;
     align-items: center;
-    text-align: center
-    ;
+    text-align: center;
 }
 .right .img{
     max-width: 90%;
     border: 1px solid #333;
 }
+ .right .top{
+    grid-column: 1/span 8;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 6;
+}
+.right .bottom{
+    grid-column: 4/-1;
+    grid-row: 1;
+    z-index: 5;
+} 
