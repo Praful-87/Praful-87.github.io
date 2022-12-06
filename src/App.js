@@ -1,18 +1,20 @@
 import React from "react";
+import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer";
+import Home from "./Components/Home/Home";
+import MySkills from "./Components/MySkills/MySkills";
 import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
+import Project from "./Components/Projects/Project";
 import "./index.css";
-import Home from "./Routes/Home";
-import Projects from "./Routes/Projects";
-import About from "./Routes/About";
-import Contact from "./Routes/Contact";
 function App() {
   return (
     <div>
       <Navbar />
       <Home />
-      <Projects />
       <About />
+      <Project />
+      <MySkills />
       <Contact />
       <Footer />
     </div>

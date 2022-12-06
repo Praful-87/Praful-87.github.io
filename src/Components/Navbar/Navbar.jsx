@@ -6,28 +6,26 @@ import "./NavbarStyles.css";
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const [color, setColor] = useState(false);
-  const changeColor = () => {
-    if (window.scrollY >= 1) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
-  window.addEventListener("scroll", changeColor);
-  console.log("nav renderd");
   return (
-    <div className={color ? "header header-bg" : "header"}>
-      <Link to="">
-        <h1>Portfolio</h1>
+    <div className="white header header-bg">
+      <Link to="home">
+        <h1 className="green highlighter">Portfolio</h1>
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
+          <span className="green number">01.</span>&nbsp;
           <Link onClick={handleClick} to="home" smooth={true} duration={1000}>
             Home
           </Link>
         </li>
         <li>
+          <span className="green number">02.</span>&nbsp;
+          <Link onClick={handleClick} to="about" smooth={true} duration={1000}>
+            About
+          </Link>
+        </li>
+        <li>
+          <span className="green number">03.</span>&nbsp;
           <Link
             onClick={handleClick}
             to="projects"
@@ -38,11 +36,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link onClick={handleClick} to="about" smooth={true} duration={1000}>
-            About
+          <span className="green number">04.</span>&nbsp;
+          <Link onClick={handleClick} to="skills" smooth={true} duration={1000}>
+            Skills
           </Link>
         </li>
         <li>
+          <span className="green number">05.</span>&nbsp;
           <Link
             onClick={handleClick}
             to="contact"
@@ -53,11 +53,15 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <div className="hamburger" onClick={handleClick}>
+      <div className="green hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes size={20} style={{ color: "#fff" }} />
+          <FaTimes
+            className="green menu-bar"
+            size={20}
+            style={{ color: "#fff" }}
+          />
         ) : (
-          <FaBars size={20} style={{ color: "#fff" }} />
+          <FaBars className="menu-bar" size={20} style={{ color: "#fff" }} />
         )}
       </div>
     </div>

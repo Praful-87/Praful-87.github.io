@@ -1,0 +1,18 @@
+.project-container{
+    display: grid;
+    grid-gap: 50px;
+    /* gap: 30px; */
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+}
+@media (max-width:940px){
+    .project-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+}
+@media (max-width:740px){
+    .project-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,0 +1,46 @@
+.card-container{
+    box-shadow: rgba(219, 215, 215, 0.24) 0px 3px 8px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card-title{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+.card-image-box{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.card-image-box>img{
+    width: 100%;
+}
+.card-desc{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+.tech-stack-container{
+    display: grid;
+    grid-template-columns: 150px auto;
+    color: white;
+}
+.tech-stack-items-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tech-title{
+    text-transform: capitalize;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+}
