@@ -1,42 +1,40 @@
-.skills-container{
-    cursor: pointer;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit,minmax(100px,max-content));
-    justify-content: space-evenly;
-
+.skills-container {
+  cursor: pointer;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+  justify-content: space-evenly;
 }
-.s-item{
-    /* border: 1px solid red; */
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 90px;
-    justify-content: center;
-    overflow: hidden;
-    width: 90px;
-    box-shadow: rgb(155, 84, 84)  0 1px 4px;
+.s-item {
+  /* border: 1px solid red; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  justify-content: center;
+  overflow: hidden;
+  width: 90px;
+  box-shadow: rgb(155, 84, 84) 0 1px 4px;
 }
-.s-item>img{
-    width: 50%;
+.s-item > img {
+  width: 50%;
 }
-.s-name{
-    color: #fff;
-    font-size: 1rem;
-    text-transform: capitalize;
+.s-name {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
-    .github-calender {
-        align-items: center;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 2rem 0;
-    }
-    .stats {
-        grid-gap: 2.4rem;
-        display: grid;
-        gap: 2.4rem;
-        justify-content: center;
-    }
-
+.github-calender {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.stats {
+  grid-gap: 2.4rem;
+  display: grid;
+  gap: 2.4rem;
+  justify-content: center;
+}

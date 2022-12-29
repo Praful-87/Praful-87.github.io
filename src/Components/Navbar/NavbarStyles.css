@@ -48,8 +48,8 @@
         position: absolute;
         top: 70px;
         left: -100%;
-        transition: 0.7s ease-in-out;
-        z-index: -3;
+        transition: 0.3s ;
+        z-index: 500;
 
 
     }

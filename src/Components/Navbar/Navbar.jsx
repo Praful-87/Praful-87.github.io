@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Typewriter from 'typewriter-effect/dist/core';
 import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
@@ -9,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="white header header-bg">
       <Link to="home">
-        <h1 className="green highlighter">Portfolio</h1>
+        <h1 className="green highlighter">Praful</h1>
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
@@ -69,3 +70,5 @@ const Navbar = () => {
 };
 
 export default React.memo(Navbar);
+
+

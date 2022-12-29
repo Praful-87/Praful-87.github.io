@@ -26,14 +26,14 @@ const About = () => {
             <p className="key white">last name</p>
             <span className="white val">: &nbsp;jadhao</span>
           </div>
-          <div className="details-item">
+          {/* <div className="details-item">
             <span className="green dot"> &#x2022;</span> &nbsp; &nbsp;
             <p className="key white">name</p>
-            <span className="white val">: &nbsp;age</span>
-          </div>
+            <span className="white val">: &nbsp;Praful</span>
+          </div> */}
           <div className="details-item">
             <span className="green dot"> &#x2022;</span> &nbsp; &nbsp;
-            <p className="key white">name</p>
+            <p className="key white">Age</p>
             <span className="white val">: &nbsp;25 years</span>
           </div>
           <div className="details-item">
@@ -44,9 +44,9 @@ const About = () => {
           <div className="details-item">
             <span className="green dot"> &#x2022;</span> &nbsp; &nbsp;
             <p className="key white">addreess</p>
-            <span className="white val">: &nbsp;praful</span>
+            <span className="white val">: &nbsp;Pusad, Maharshtra 445214</span>
           </div>
-          <button className="btn">download resume</button>
+            <a className="btn" href="https://drive.google.com/uc?export=download&id=14lJoAtZPsUgv7cgcLuDeTUVAQxhYH2E_">download resume</a>
         </div>
       </div>
     </div>
@@ -54,3 +54,4 @@ const About = () => {
 };
 
 export default About;
+// https://drive.google.com/file/d/14lJoAtZPsUgv7cgcLuDeTUVAQxhYH2E_/view?usp=share_link

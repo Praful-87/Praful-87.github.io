@@ -1,11 +1,18 @@
 .home-container{
     display: flex;
+    justify-content: center;align-items: center;
+}
+.wrapper{
+    /* border: 1px solid red; */
+    height: fit-content;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /* border: 1px solid white; */
 }
 #home{
-    height: 80vh;
+    height: 100vh;
+
 
 }
 .my-image-bx{
