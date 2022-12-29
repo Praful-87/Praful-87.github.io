@@ -1,55 +1,56 @@
-.contact-container{
-    margin-bottom: 40px;
+.contact-container {
+  /* border: 1px solid white; */
+  margin: 20px 0;
+  padding-bottom: 30px;
 }
-.Contatct-Information{
-    color:white;
-    font-size: 30px;
-    margin: 20px 0;
-    text-transform: capitalize;
-    /* margin-bottom: 30px; */
+.Contatct-Information {
+  color: white;
+  font-size: 30px;
+  margin: 20px 0;
+  text-transform: capitalize;
+  /* margin-bottom: 30px; */
 }
-.c-wrapper{
-    grid-gap: 40px;
-    display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(3,1fr);
+.c-wrapper {
+  grid-gap: 40px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
 }
-.box{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 0 1px 1px hsl(0deg 4% 89% / 15%);
+.box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 1px 1px hsl(0deg 4% 89% / 15%);
 }
-.icon-box{
-    background-color: red;
-    height: 50px;
-    width: 50px;
-    border-radius:50%;
-    background-color: rgb(54,77,90);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin-right: 15px;
-    
+.icon-box {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(54, 77, 90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 15px;
 }
-.c-icons{
-    color: var(--green);
+.c-icons {
+  color: var(--green);
 }
-.info-box{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.info-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-@media (max-width: 1040px){
-    .c-wrapper {
-        grid-template-columns: repeat(2,1fr);
-    }
+@media (max-width: 1040px) {
+  .c-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-@media (max-width: 500px){
-    .c-wrapper {
-        grid-template-columns: repeat(1,1fr);
-    }
+@media (max-width: 500px) {
+  .c-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

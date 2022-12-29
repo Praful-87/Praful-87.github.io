@@ -8,12 +8,15 @@ const Card = ({ item }) => {
       <div className="card-image-box">
         <img src={item.image} alt="" />
       </div>
+      
       <p className="card-desc">{item.desc} </p>
       <div className="tech-stack-container">
-        <p className="tech-title">tech stack used &rarr;&nbsp;</p>
+        <center>
+          <p className="tech-title">tech stack used &#9889;&nbsp;</p>
+        </center>
         <div className="tech-stack-items-container">
           {item.techStack.map((el) => {
-            return <p key={el}>{el} |&nbsp;</p>
+            return <p key={el}>{el} |&nbsp;</p>;
           })}
         </div>
       </div>
