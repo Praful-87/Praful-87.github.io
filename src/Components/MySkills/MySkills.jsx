@@ -2,6 +2,7 @@ import "./mySkills.css";
 import React from "react";
 import { data } from "./data";
 import GitHubCalendar from "react-github-calendar";
+import { tools } from "./tool";
 
 const MySkills = () => {
   return (
@@ -10,6 +11,17 @@ const MySkills = () => {
         <h1 className="title">my skills</h1>
         <div className="skills-container">
           {data.map((item, i) => {
+            return (
+              <div key={i} className="s-item">
+                <img src={item.image} alt="" />
+                <p className="s-name">{item.name} </p>
+              </div>
+            );
+          })}
+        </div>
+        <h1 className="title">Tools</h1>
+        <div className="tools-container">
+          {tools.map((item, i) => {
             return (
               <div key={i} className="s-item">
                 <img src={item.image} alt="" />

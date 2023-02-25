@@ -5,6 +5,12 @@
   grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
   justify-content: space-evenly;
 }
+.tools-container {
+  width: fit-content;
+  display: flex;
+  gap: 30px;
+  margin: auto;
+}
 .s-item {
   /* border: 1px solid red; */
   align-items: center;
