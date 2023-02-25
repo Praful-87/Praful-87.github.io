@@ -13,7 +13,7 @@ const Home = () => {
           />
         </div>
         <h1 className="white home-intro">
-          Hi I, am &nbsp;<span className="green">praful</span>{" "}
+          Hi I, am &nbsp;<span className="green">Praful</span>{" "}
         </h1>
         <p className="intro-desc white">
           The purpose of my portfolio is to track my learning and development
