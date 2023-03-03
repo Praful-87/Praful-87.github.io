@@ -2,12 +2,27 @@ import "./contact.css";
 import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import React from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    // service_uih5fql
+    //My Default Template
+    emailjs.sendForm(
+      "service_uih5fql",
+      "template_eqd2vyq",
+      e.target,
+      "uXnFlmRco6rVAZm0V"
+    );
+    alert("Thank You for contacting me");
+    e.target.reset();
+  }
   return (
     <>
       <div id="contact" className="layout contact-container">
-      <h1 className="title">contact me</h1>
+        <h1 className="title">contact me</h1>
         <div className="c-wrapper">
           <div className="contact-image">
             <img
@@ -48,20 +63,21 @@ const Contact = () => {
                 </div>
               </a>
             </div>
-            <div className="firebase-form">
-              <input type="text" placeholder="Full Name" />
+            <form className="firebase-form" onSubmit={sendEmail}>
+              <input name="from_name" type="text" placeholder="Full Name" />
               <br />
-              <input type="text" placeholder="Full Name" />
+              <input name="from_email" type="email" placeholder="Email" />
               <br />
               <textarea
                 placeholder="Type Your Messege"
-                name=""
-                id=""
+                name="message"
                 cols="30"
                 rows="5"
               ></textarea>
-              <button className="send-button">Send</button>
-            </div>
+              <button type="submit" className="send-button">
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>
