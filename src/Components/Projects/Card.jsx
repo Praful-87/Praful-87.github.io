@@ -1,6 +1,7 @@
 import "./card.css";
 import React from "react";
-
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 const Card = ({ item }) => {
   return (
     <div className="card-container">
@@ -8,7 +9,7 @@ const Card = ({ item }) => {
       <div className="card-image-box">
         <img src={item.image} alt="" />
       </div>
-      
+
       <p className="card-desc">{item.desc} </p>
       <div className="tech-stack-container">
         <center>
@@ -21,12 +22,20 @@ const Card = ({ item }) => {
         </div>
       </div>
       <div className="btn-container">
-        <a target="_blank" href={item.live}>
+        {/* <a target="_blank" href={item.live}>
           <button className="btn">live</button>
+        </a> */}
+        <a  href={item.live} target="_blank">
+          <div className="box source">
+            <FaGithub className="c-icons" />
+            <h3 className="white">Github</h3>
+          </div>
         </a>
-        &nbsp;&nbsp;&nbsp;
-        <a target="_blank" href={item.source}>
-          <button className="btn">source</button>
+        <a href={item.source} target="_blank">
+          <div className="box source">
+            <FaExternalLinkAlt className="c-icons" />
+            <h3 className="white">Source</h3>
+          </div>
         </a>
       </div>
     </div>

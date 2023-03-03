@@ -5,7 +5,7 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  console.log("rendering");
+  // console.log("rendering");
   function sendEmail(e) {
     e.preventDefault();
 
@@ -23,7 +23,7 @@ const Contact = () => {
   return (
     <>
       <div id="contact" className="layout contact-container">
-        <h1 className="title">contact me</h1>
+        <h1 className="title">Let's connect with me</h1>
         <div className="c-wrapper">
           <div className="contact-image">
             <img

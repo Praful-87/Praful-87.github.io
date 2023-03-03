@@ -4,7 +4,9 @@ import React from "react";
 const About = () => {
   return (
     <div id="about" className="layout aobut-container">
-      <h1 className="title">about</h1>
+      <h1 className="title">
+        Who I <span className="green">Am</span>
+      </h1>
       <div className="detail-container">
         <div className="a-img-box">
           <img
@@ -46,7 +48,12 @@ const About = () => {
             <p className="key white">addreess</p>
             <span className="white val">: &nbsp;Pusad, Maharshtra 445214</span>
           </div>
-            <a className="btn" href="https://drive.google.com/uc?export=download&id=14lJoAtZPsUgv7cgcLuDeTUVAQxhYH2E_">download resume</a>
+          <a
+            className="btn"
+            href="https://drive.google.com/uc?export=download&id=1TupObe5TtIeAUGbaT-HMTtkzWj2YqZHF"
+          >
+            download resume
+          </a>
         </div>
       </div>
     </div>
