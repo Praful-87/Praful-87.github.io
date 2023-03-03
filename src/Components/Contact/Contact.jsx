@@ -5,6 +5,7 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  console.log("rendering");
   function sendEmail(e) {
     e.preventDefault();
 
@@ -47,16 +48,13 @@ const Contact = () => {
                   <h3 className="white">LinkedIn</h3>
                 </div>
               </a>
-              <a
-                href="https://mail.google.com/mail/prafuljadhao87@gmail.com"
-                target="_blank"
-              >
+              <a href="#" target="_blank">
                 <div className="box">
                   <SiGmail className="c-icons" />
                   <h3 className="white">Gmail</h3>
                 </div>
               </a>
-              <a href="https://github.com/Praful-87" target="_blank">
+              <a href="#" target="_blank">
                 <div className="box">
                   <FaPhoneAlt className="c-icons" />
                   <h3 className="white">7075311197</h3>
