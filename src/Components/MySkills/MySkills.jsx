@@ -8,7 +8,9 @@ const MySkills = () => {
   return (
     <>
       <div id="skills" className="layout">
-        <h1 className="title">my skills</h1>
+        <center>
+          <h1 className="title">tech stack</h1>
+        </center>
         <div className="skills-container">
           {data.map((item, i) => {
             return (
@@ -19,7 +21,10 @@ const MySkills = () => {
             );
           })}
         </div>
-        <h1 className="title">Tools</h1>
+        <center>
+          {" "}
+          <h1 className="title">Tools i use</h1>
+        </center>
         <div className="tools-container">
           {tools.map((item, i) => {
             return (
@@ -32,7 +37,7 @@ const MySkills = () => {
         </div>
 
         <div className="github-calender">
-          <h1 className="title">github calendar</h1>
+          <h1 className="title">github acitivity</h1>
           <GitHubCalendar username="Praful-87" />
         </div>
         <div className="stats">
@@ -40,7 +45,7 @@ const MySkills = () => {
             &nbsp;
             <img
               align="center"
-              src="https://github-readme-stats.vercel.app/api?username=praful-87&show_icons=true&locale=en"
+              src="https://github-readme-stats.vercel.app/api?username=praful-87&theme=radical&hide_border=false&show_icons=true&locale=en "
               alt="praful-87"
             />
           </p>
@@ -48,7 +53,7 @@ const MySkills = () => {
           <p>
             <img
               align="center"
-              src="https://github-readme-streak-stats.herokuapp.com/?user=praful-87&"
+              src="https://github-readme-streak-stats.herokuapp.com/?user=praful-87&theme=radical&hide_border=false"
               alt="praful-87"
             />
           </p>

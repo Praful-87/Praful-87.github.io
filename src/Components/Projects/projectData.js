@@ -38,7 +38,7 @@ export const data = [
       "Redux",
       "Nodejs",
       "ExpressJs",
-      "Mongo Atls",
+      "Mongo Atlas",
     ],
     live: "https://wantflix-shows.netlify.app/",
     source: "https://github.com/A-Hore/likely-laborer-9813",

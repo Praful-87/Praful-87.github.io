@@ -20,17 +20,7 @@ const Home = () => {
           throughout my graduate years. My portfolio is a collection and
           reflection of my skills to get myself a clearer picture of my growth.
         </p>
-        <div className="white icon-cont">
-          <a target="_blank" href="https://github.com/Praful-87">
-            <FaGithub />
-          </a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/praful-jadhao-6ab31a202/"
-          >
-            <FaLinkedinIn />
-          </a>
-        </div>
+        
       </div>
     </div>
   );

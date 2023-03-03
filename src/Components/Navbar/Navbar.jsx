@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Typewriter from 'typewriter-effect/dist/core';
+import Typewriter from "typewriter-effect/dist/core";
 import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
@@ -9,24 +9,24 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   return (
     <div className="white header header-bg">
-      <Link to="home">
-        <h1 className="green highlighter">Praful</h1>
+      <Link onClick={handleClick} to="home" smooth={true} duration={1000}>
+        <h1 className="hightlight">
+          <span className="green">P</span>raful <span className="green">J</span>
+          adhao{" "}
+        </h1>
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <span className="green number">01.</span>&nbsp;
           <Link onClick={handleClick} to="home" smooth={true} duration={1000}>
             Home
           </Link>
         </li>
         <li>
-          <span className="green number">02.</span>&nbsp;
           <Link onClick={handleClick} to="about" smooth={true} duration={1000}>
             About
           </Link>
         </li>
         <li>
-          <span className="green number">03.</span>&nbsp;
           <Link
             onClick={handleClick}
             to="projects"
@@ -37,13 +37,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <span className="green number">04.</span>&nbsp;
           <Link onClick={handleClick} to="skills" smooth={true} duration={1000}>
             Skills
           </Link>
         </li>
         <li>
-          <span className="green number">05.</span>&nbsp;
           <Link
             onClick={handleClick}
             to="contact"
@@ -70,5 +68,3 @@ const Navbar = () => {
 };
 
 export default React.memo(Navbar);
-
-
