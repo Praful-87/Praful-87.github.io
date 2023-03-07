@@ -63,7 +63,7 @@
 .firebase-form input {
   padding-left: 10px;
   width: 100%;
-  border: 2px solid rgb(160, 5, 5);
+  border: 1px solid var(--green);
   /* border: 2px solid var(--green); */
   border-radius: 2px;
   background-color: transparent;
@@ -77,7 +77,7 @@
 }
 .firebase-form input:focus,
 textarea:focus {
-  outline: 2px solid cyan;
+  outline: 1px solid cyan;
   border: none;
 }
 .firebase-form input::placeholder,
@@ -92,12 +92,12 @@ textarea {
   color: white;
   border-radius: 2px;
   background-color: transparent;
-  border: 2px solid rgb(160, 5, 5);
-  /* border: 2px solid var(--green); */
+  /* border: 2px solid rgb(160, 5, 5); */
+  border: 1px solid var(--green);
 }
 .send-button {
   border: none;
-  background-color: rgb(235, 34, 34);
+  background-color: var(--green);
   /* background-color: rgb(160, 5, 5); */
   /* background-color: var(--green); */
   color: white;

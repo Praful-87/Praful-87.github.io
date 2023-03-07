@@ -1,29 +1,32 @@
 import "./contact.css";
 import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import React from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const Email = useRef(null);
+  const Msg = useRef(null);
   // console.log("rendering");
   function sendEmail(e) {
     e.preventDefault();
-
-    // service_uih5fql
-    //My Default Template
-    emailjs.sendForm(
-      "service_uih5fql",
-      "template_eqd2vyq",
-      e.target,
-      "uXnFlmRco6rVAZm0V"
-    );
-    alert("Thank You for contacting me");
-    e.target.reset();
+    if (Email.current.value && Msg.current.value) {
+      emailjs.sendForm(
+        "service_uih5fql",
+        "template_eqd2vyq",
+        e.target,
+        "uXnFlmRco6rVAZm0V"
+      );
+      alert("Thank You for contacting me");
+      e.target.reset();
+    }
   }
   return (
     <>
       <div id="contact" className="layout contact-container">
-        <h1 className="title">Let's connect with me</h1>
+        <h1 className="title">
+          Let's connect <span className="green">with</span> me
+        </h1>
         <div className="c-wrapper">
           <div className="contact-image">
             <img
@@ -64,9 +67,15 @@ const Contact = () => {
             <form className="firebase-form" onSubmit={sendEmail}>
               <input name="from_name" type="text" placeholder="Full Name" />
               <br />
-              <input name="from_email" type="email" placeholder="Email" />
+              <input
+                ref={Email}
+                name="from_email"
+                type="email"
+                placeholder="Email"
+              />
               <br />
               <textarea
+                ref={Msg}
                 placeholder="Type Your Messege"
                 name="message"
                 cols="30"

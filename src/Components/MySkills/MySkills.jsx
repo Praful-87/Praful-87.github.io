@@ -23,7 +23,9 @@ const MySkills = () => {
         </div>
         <center>
           {" "}
-          <h1 className="title">Tools i use</h1>
+          <h1 className="title">
+            Tools <span className="green">I</span> use
+          </h1>
         </center>
         <div className="tools-container">
           {tools.map((item, i) => {
@@ -37,7 +39,9 @@ const MySkills = () => {
         </div>
 
         <div className="github-calender">
-          <h1 className="title">github acitivity</h1>
+          <h1 className="title">
+            github <span className="green">acitivity</span>{" "}
+          </h1>
           <GitHubCalendar username="Praful-87" />
         </div>
         <div className="stats">

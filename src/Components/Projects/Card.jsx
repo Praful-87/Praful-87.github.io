@@ -25,16 +25,16 @@ const Card = ({ item }) => {
         {/* <a target="_blank" href={item.live}>
           <button className="btn">live</button>
         </a> */}
-        <a  href={item.live} target="_blank">
+        <a href={item.source} target="_blank">
           <div className="box source">
             <FaGithub className="c-icons" />
             <h3 className="white">Github</h3>
           </div>
         </a>
-        <a href={item.source} target="_blank">
+        <a href={item.live} target="_blank">
           <div className="box source">
             <FaExternalLinkAlt className="c-icons" />
-            <h3 className="white">Source</h3>
+            <h3 className="white">Live</h3>
           </div>
         </a>
       </div>
