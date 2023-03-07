@@ -27,7 +27,7 @@ const MySkills = () => {
             Tools <span className="green">I</span> use
           </h1>
         </center>
-        <div className="tools-container">
+        <div className="skills-container">
           {tools.map((item, i) => {
             return (
               <div key={i} className="s-item">

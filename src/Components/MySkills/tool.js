@@ -9,7 +9,8 @@ export const tools = [
     name: "Vs Code",
   },
   {
-    image: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/256/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png",
+    image:
+      "https://img.icons8.com/external-tal-revivo-color-tal-revivo/256/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png",
     name: "Postman",
   },
 ];
