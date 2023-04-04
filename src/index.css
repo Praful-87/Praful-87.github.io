@@ -52,13 +52,15 @@ img {
   text-decoration: none;
 }
 
+
+
 .title {
   text-transform: capitalize;
   color: #fff;
   padding: 0 60px;
   border-bottom: 5px solid var(--green);
   /* font-size: 2.5rem; */
-  font-size: 3.5vw;
+  font-size: calc(16px + 0.9vw);
   width: fit-content;
   text-align: center;
   letter-spacing: 2px;

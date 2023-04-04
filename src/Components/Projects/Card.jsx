@@ -17,7 +17,7 @@ const Card = ({ item }) => {
         </center>
         <div className="tech-stack-items-container">
           {item.techStack.map((el) => {
-            return <p key={el}>{el} |&nbsp;</p>;
+            return <p className="tech-item" key={el}>{el}</p>;
           })}
         </div>
       </div>

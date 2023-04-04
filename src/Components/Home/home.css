@@ -17,9 +17,16 @@
 .my-image-bx {
   width: 170px;
   height: 170px;
-  border-radius: 50%;
   overflow: hidden;
-  /* border: 9px solid var(--green); */
+  /* border: 2px solid white; */
+  border-radius: 10px;
+  box-shadow: 10px 14px 20px #ea3752;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  
 }
 .my-image-bx > img {
   width: 100%;
