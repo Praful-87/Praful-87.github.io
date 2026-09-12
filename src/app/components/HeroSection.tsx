@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaGithub, FaLinkedin, FaExternalLinkAlt   } from "react-icons/fa";

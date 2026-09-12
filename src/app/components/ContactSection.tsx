@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { CiMail } from "react-icons/ci";
 import { FaCheck } from "react-icons/fa";
@@ -72,11 +73,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-400" />
             </span>
-            Get In Touch / Open To Work
+            Open To Work
           </div>
           <h2
             id="contact-heading"
-            className={`text-3xl md:text-5xl font-bold tracking-tight mb-4 ${
+            className={`text-3xl md:text-4xl font-bold tracking-tight mb-4 ${
               isDark ? "text-white" : "text-slate-900"
             }`}
           >

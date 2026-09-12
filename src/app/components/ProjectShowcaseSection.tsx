@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { PROJECTS } from '../data/portfolioData';
 import { Project, ProjectCategory } from '../types';

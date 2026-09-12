@@ -1,5 +1,7 @@
+"use client"
+
 import React, { useState, useEffect } from "react";
-import { CiSun } from "react-icons/ci";
+import { FaSun  } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 import { FaMoon } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
@@ -110,7 +112,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, onToggleTheme }) => {
             }`}
           >
             {isDark ? (
-              <CiSun className="w-4 h-4 text-amber-300 transition-transform hover:rotate-45" />
+              <FaSun  className="w-4 h-4 text-amber-300 transition-transform hover:rotate-45" />
             ) : (
               <FaMoon className="w-4 h-4 text-indigo-600 transition-transform hover:-rotate-12" />
             )}

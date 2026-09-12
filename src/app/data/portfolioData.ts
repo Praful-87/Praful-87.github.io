@@ -10,14 +10,14 @@ export const PERSONAL_INFO = {
     "Full Stack Engineer",
   ],
   summary:
-    "Passionate software engineer with 5+ years of experience building scalable web applications. I love solving complex problems and creating intuitive user experiences.",
+    "Passionate software engineer with 2.5+ years of experience building scalable web applications. I love solving complex problems and creating intuitive user experiences.",
   location: "Pune, IN",
   email: "prafuljadhao87@gmail.com",
   avatarUrl:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuC3vGPYLeL_621icclLSrtR9KFXDBWX6_shKTL4AtkvMJuNRqtUbL9o7Si0EOk8o3EEJifW5q1mI4cOh-_aKLNHQxGolnI_TEykESYP54m-zr0aC1zUmA0TDIcie8C3sltqtxi0_p3BcqQ1Ki0JE-nr8QXjepOOEFV0WBM5EJJYcUb6hLYDm0btXn2Hs-ir6RzfRwACinNgGcUTi19IFDPd87kkkH8023CYmTEJfqE1Ls48kJbEBOCLIA",
+    "https://avatars.githubusercontent.com/u/103850217?v=4",
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    github: "https://github.com/praful-87",
+    linkedin: "https://linkedin.com/in/praful-jadhao/",
     twitter: "https://x.com",
   },
   availability: "Available for freelance & full-time roles",
