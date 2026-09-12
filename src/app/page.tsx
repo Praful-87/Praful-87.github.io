@@ -41,7 +41,7 @@ export default function Home() {
         <ExperienceSection isDark={isDark} />
         <SkillsSection isDark={isDark} />
         <ProjectShowcaseSection isDark={isDark} />
-        {/* <ContactSection isDark={isDark} /> */}
+        <ContactSection isDark={isDark} />
       </main>
     </div>
   );
