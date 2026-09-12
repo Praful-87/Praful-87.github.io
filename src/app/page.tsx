@@ -5,6 +5,7 @@ import { HeroSection } from "./components/HeroSection";
 import { ExperienceSection } from "./components/ExperienceSection";
 import { SkillsSection } from "./components/SkillsSection";
 import { ProjectShowcaseSection } from "./components/ProjectShowcaseSection";
+import { ContactSection } from "./components/ContactSection";
 
 
 export default function Home() {

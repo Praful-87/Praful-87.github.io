@@ -1,4 +1,7 @@
 import React from 'react';
+import { FaTerminal } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt,FaAward ,FaCheckCircle    } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { Project } from '../types';
 
 interface ProjectModalProps {
@@ -34,12 +37,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, is
               : 'bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 border border-slate-200'
           }`}
         >
-          <X className="w-5 h-5" />
+          <FaSquareXTwitter className="w-5 h-5" />
         </button>
 
         {/* Top File badge */}
         <div className="flex items-center gap-2 mb-3">
-          <Terminal className="w-4 h-4 text-sky-400" />
+          <FaTerminal className="w-4 h-4 text-sky-400" />
           <span className="text-xs font-mono text-slate-400">{project.filename}</span>
           <span
             className={`text-[10px] font-semibold px-2 py-0.5 rounded-full uppercase ml-2 ${
@@ -67,7 +70,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, is
               }`}
             >
               <div className="flex items-center gap-2 text-xs font-semibold text-sky-400 uppercase tracking-wider mb-1">
-                <Award className="w-3.5 h-3.5" />
+                <FaAward  className="w-3.5 h-3.5" />
                 Role
               </div>
               <div className="text-sm font-medium">{project.details.role}</div>
@@ -81,7 +84,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, is
               }`}
             >
               <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">
-                <CheckCircle2 className="w-3.5 h-3.5" />
+                <FaCheckCircle  className="w-3.5 h-3.5" />
                 Impact &amp; Metrics
               </div>
               <div className="text-sm font-medium">{project.details.metrics}</div>
@@ -132,7 +135,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, is
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-slate-300'
             }`}
           >
-            <Github className="w-4 h-4" />
+            <FaGithub className="w-4 h-4" />
             View Repository
           </a>
 
@@ -146,7 +149,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, is
             }}
             className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold bg-sky-500 hover:bg-sky-400 text-slate-950 transition-colors shadow-md"
           >
-            <ExternalLink className="w-4 h-4" />
+            <FaExternalLinkAlt className="w-4 h-4" />
             {project.liveUrlLabel}
           </a>
         </div>
