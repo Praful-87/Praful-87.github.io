@@ -1,7 +1,7 @@
-import React from 'react';
-import { SKILLS_ROW_1, SKILLS_ROW_2 } from '../data/portfolioData';
-import { SkillItem } from '../types';
-import { TechIcon } from './TechIcons';
+import React from "react";
+import { SKILLS_ROW_1, SKILLS_ROW_2 } from "../data/portfolioData";
+import { SkillItem } from "../types";
+import { TechIcon } from "./TechIcons";
 
 interface SkillsSectionProps {
   isDark: boolean;
@@ -16,7 +16,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ isDark }) => {
     <section
       id="skills"
       className={`py-20 border-t transition-colors ${
-        isDark ? 'border-white/[0.06] bg-[#0a0d14]' : 'border-slate-200 bg-white'
+        isDark ? "border-white/6 bg-[#0a0d14]" : "border-slate-200 bg-white"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 text-center overflow-hidden">
@@ -29,17 +29,19 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ isDark }) => {
           <h2
             id="skills-heading"
             className={`text-3xl md:text-4xl font-bold tracking-tight mb-4 ${
-              isDark ? 'text-white' : 'text-slate-900'
+              isDark ? "text-white" : "text-slate-900"
             }`}
           >
             Skills &amp; Capabilities
           </h2>
           <p
             className={`text-base max-w-xl mx-auto ${
-              isDark ? 'text-slate-400' : 'text-slate-600'
+              isDark ? "text-slate-400" : "text-slate-600"
             }`}
           >
-            Core technical competencies, programming frameworks, cloud infrastructure, and modern developer tooling optimized for high scale.
+            Core technical competencies, programming frameworks, cloud
+            infrastructure, and modern developer tooling optimized for high
+            scale.
           </p>
         </div>
 
@@ -47,15 +49,19 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ isDark }) => {
         <div className="relative marquee-wrapper space-y-4">
           {/* Left Gradient Fade Mask */}
           <div
-            className={`absolute left-0 top-0 bottom-0 w-20 md:w-32 z-10 pointer-events-none bg-gradient-to-r ${
-              isDark ? 'from-[#0a0d14] to-transparent' : 'from-white to-transparent'
+            className={`absolute left-0 top-0 bottom-0 w-20 md:w-32 z-10 pointer-events-none bg-linear-to-r ${
+              isDark
+                ? "from-[#0a0d14] to-transparent"
+                : "from-white to-transparent"
             }`}
           />
 
           {/* Right Gradient Fade Mask */}
           <div
-            className={`absolute right-0 top-0 bottom-0 w-20 md:w-32 z-10 pointer-events-none bg-gradient-to-l ${
-              isDark ? 'from-[#0a0d14] to-transparent' : 'from-white to-transparent'
+            className={`absolute right-0 top-0 bottom-0 w-20 md:w-32 z-10 pointer-events-none bg-linear-to-l ${
+              isDark
+                ? "from-[#0a0d14] to-transparent"
+                : "from-white to-transparent"
             }`}
           />
 
@@ -67,25 +73,29 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ isDark }) => {
                   key={`r1-${skill.name}-${index}`}
                   className={`flex items-center gap-3 px-5 py-3.5 rounded-2xl border transition-all duration-300 group cursor-default select-none ${
                     isDark
-                      ? 'bg-[#0f1422] border-white/[0.08] hover:border-sky-400/50 hover:shadow-[0_0_20px_rgba(56,189,248,0.2)]'
-                      : 'bg-slate-50 border-slate-200 hover:border-sky-500/50 hover:shadow-md hover:bg-white'
+                      ? "bg-[#0f1422] border-white/8 hover:border-sky-400/50 hover:shadow-[0_0_20px_rgba(56,189,248,0.2)]"
+                      : "bg-slate-50 border-slate-200 hover:border-sky-500/50 hover:shadow-md hover:bg-white"
                   }`}
                 >
-                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center p-1 group-hover:scale-110 transition-transform flex-shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center p-1 group-hover:scale-110 transition-transform shrink-0">
                     <TechIcon name={skill.svgIcon} />
                   </div>
                   <div className="text-left">
                     <div className="flex items-center gap-1.5">
                       <span
                         className={`text-sm font-semibold transition-colors ${
-                          isDark ? 'text-white group-hover:text-sky-400' : 'text-slate-900 group-hover:text-sky-600'
+                          isDark
+                            ? "text-white group-hover:text-sky-400"
+                            : "text-slate-900 group-hover:text-sky-600"
                         }`}
                       >
                         {skill.name}
                       </span>
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                     </div>
-                    <span className={`text-[11px] font-medium ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
+                    <span
+                      className={`text-[11px] font-medium ${isDark ? "text-slate-400" : "text-slate-500"}`}
+                    >
                       {skill.category}
                     </span>
                   </div>
@@ -102,25 +112,29 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ isDark }) => {
                   key={`r2-${skill.name}-${index}`}
                   className={`flex items-center gap-3 px-5 py-3.5 rounded-2xl border transition-all duration-300 group cursor-default select-none ${
                     isDark
-                      ? 'bg-[#0f1422] border-white/[0.08] hover:border-sky-400/50 hover:shadow-[0_0_20px_rgba(56,189,248,0.2)]'
-                      : 'bg-slate-50 border-slate-200 hover:border-sky-500/50 hover:shadow-md hover:bg-white'
+                      ? "bg-[#0f1422] border-white/8 hover:border-sky-400/50 hover:shadow-[0_0_20px_rgba(56,189,248,0.2)]"
+                      : "bg-slate-50 border-slate-200 hover:border-sky-500/50 hover:shadow-md hover:bg-white"
                   }`}
                 >
-                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center p-1 group-hover:scale-110 transition-transform flex-shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center p-1 group-hover:scale-110 transition-transform shrink-0">
                     <TechIcon name={skill.svgIcon} />
                   </div>
                   <div className="text-left">
                     <div className="flex items-center gap-1.5">
                       <span
                         className={`text-sm font-semibold transition-colors ${
-                          isDark ? 'text-white group-hover:text-sky-400' : 'text-slate-900 group-hover:text-sky-600'
+                          isDark
+                            ? "text-white group-hover:text-sky-400"
+                            : "text-slate-900 group-hover:text-sky-600"
                         }`}
                       >
                         {skill.name}
                       </span>
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                     </div>
-                    <span className={`text-[11px] font-medium ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
+                    <span
+                      className={`text-[11px] font-medium ${isDark ? "text-slate-400" : "text-slate-500"}`}
+                    >
                       {skill.category}
                     </span>
                   </div>

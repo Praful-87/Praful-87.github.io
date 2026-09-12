@@ -26,7 +26,7 @@ export const ProjectShowcaseSection: React.FC<ProjectShowcaseSectionProps> = ({ 
     <section
       id="projects"
       className={`py-24 border-t relative transition-colors ${
-        isDark ? 'border-white/[0.06] bg-[#0b0f19]' : 'border-slate-200 bg-slate-50/60'
+        isDark ? 'border-white/6 bg-[#0b0f19]' : 'border-slate-200 bg-slate-50/60'
       }`}
     >
       <div className="max-w-6xl mx-auto px-6">

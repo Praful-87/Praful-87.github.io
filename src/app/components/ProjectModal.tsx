@@ -99,7 +99,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, is
             <ul className="space-y-2">
               {project.details.highlights.map((highlight, index) => (
                 <li key={index} className="flex items-start gap-2.5 text-xs md:text-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-1.5 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-1.5 shrink-0" />
                   <span className={isDark ? 'text-slate-300' : 'text-slate-600'}>{highlight}</span>
                 </li>
               ))}
@@ -124,7 +124,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, is
         </div>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-3 pt-4 border-t border-white/[0.08]">
+        <div className="flex items-center gap-3 pt-4 border-t border-white/8">
           <a
             href={project.codeUrl}
             target="_blank"
