@@ -10,7 +10,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ isDark }) 
     <section
       id="experience"
       className={`py-20 border-t relative transition-colors ${
-        isDark ? 'border-white/[0.06] bg-[#0a0d14]' : 'border-slate-200 bg-slate-50/50'
+        isDark ? 'border-white/6 bg-[#0a0d14]' : 'border-slate-200 bg-slate-50/50'
       }`}
     >
       <div className="max-w-4xl mx-auto px-6">
@@ -36,7 +36,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ isDark }) 
         {/* Stacked Timeline Cards */}
         <div className="relative pl-6 md:pl-10 space-y-8">
           {/* Vertical Guideline */}
-          <div className="absolute left-2.5 md:left-4 top-3 bottom-4 w-px bg-gradient-to-b from-sky-400 via-sky-500/20 to-transparent" />
+          <div className="absolute left-2.5 md:left-4 top-3 bottom-4 w-px bg-linear-to-b from-sky-400 via-sky-500/20 to-transparent" />
 
           {EXPERIENCES.map((exp, index) => (
             <div key={exp.id} className="relative group">

@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { CiMail } from "react-icons/ci";
 import { FaCheck } from "react-icons/fa";
 import { FaRegCopy } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { PERSONAL_INFO } from '../data/portfolioData';
+import { PERSONAL_INFO } from "../data/portfolioData";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
-
 
 interface ContactSectionProps {
   isDark: boolean;
@@ -16,10 +15,10 @@ interface ContactSectionProps {
 
 export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: 'project',
-    message: '',
+    name: "",
+    email: "",
+    subject: "project",
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -27,7 +26,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
   const [copiedEmail, setCopiedEmail] = useState(false);
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -42,10 +43,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
       setIsSubmitting(false);
       setSubmitted(true);
       setFormData({
-        name: '',
-        email: '',
-        subject: 'project',
-        message: '',
+        name: "",
+        email: "",
+        subject: "project",
+        message: "",
       });
     }, 900);
   };
@@ -60,7 +61,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
     <section
       id="contact"
       className={`py-24 border-t relative transition-colors ${
-        isDark ? 'border-white/[0.06] bg-[#0a0d14]' : 'border-slate-200 bg-white'
+        isDark ? "border-white/6 bg-[#0a0d14]" : "border-slate-200 bg-white"
       }`}
     >
       <div className="max-w-5xl mx-auto px-6">
@@ -76,13 +77,16 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
           <h2
             id="contact-heading"
             className={`text-3xl md:text-5xl font-bold tracking-tight mb-4 ${
-              isDark ? 'text-white' : 'text-slate-900'
+              isDark ? "text-white" : "text-slate-900"
             }`}
           >
             Get in touch
           </h2>
-          <p className={`text-base md:text-lg ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
-            I'm always interested in new opportunities, exciting projects, or even grabbing a coffee.
+          <p
+            className={`text-base md:text-lg ${isDark ? "text-slate-400" : "text-slate-600"}`}
+          >
+            I'm always interested in new opportunities, exciting projects, or
+            even grabbing a coffee.
           </p>
         </div>
 
@@ -94,8 +98,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
               id="contact-info-card"
               className={`p-6 md:p-8 rounded-2xl border relative overflow-hidden flex flex-col justify-between h-full shadow-2xl card-glow ${
                 isDark
-                  ? 'bg-[#0f1422] border-white/10'
-                  : 'bg-slate-50 border-slate-200 shadow-slate-100'
+                  ? "bg-[#0f1422] border-white/10"
+                  : "bg-slate-50 border-slate-200 shadow-slate-100"
               }`}
             >
               {/* Ambient glow inside card */}
@@ -106,14 +110,18 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
               <div className="relative z-10 space-y-6">
                 {/* Header Badge */}
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500/20 to-blue-500/10 border border-sky-400/30 flex items-center justify-center text-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.2)] flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-linear-to-br from-sky-500/20 to-blue-500/10 border border-sky-400/30 flex items-center justify-center text-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.2)] shrink-0">
                     <CiMail className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className={`text-lg font-bold tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>
+                    <h3
+                      className={`text-lg font-bold tracking-tight ${isDark ? "text-white" : "text-slate-900"}`}
+                    >
                       Email Me
                     </h3>
-                    <p className={`text-xs flex items-center gap-1.5 mt-0.5 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
+                    <p
+                      className={`text-xs flex items-center gap-1.5 mt-0.5 ${isDark ? "text-slate-400" : "text-slate-500"}`}
+                    >
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                       {PERSONAL_INFO.responseTime}
                     </p>
@@ -124,8 +132,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                 <div
                   className={`rounded-xl p-4 border transition-all duration-300 group/link ${
                     isDark
-                      ? 'bg-slate-900/90 border-white/[0.08] hover:border-sky-400/40'
-                      : 'bg-white border-slate-200 hover:border-sky-500/40 shadow-sm'
+                      ? "bg-slate-900/90 border-white/8 hover:border-sky-400/40"
+                      : "bg-white border-slate-200 hover:border-sky-500/40 shadow-sm"
                   }`}
                 >
                   <div className="flex items-center justify-between mb-1">
@@ -156,18 +164,18 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                     href={`mailto:${PERSONAL_INFO.email}`}
                     className={`text-base md:text-lg font-semibold transition-colors break-all flex items-center justify-between gap-2 ${
                       isDark
-                        ? 'text-white group-hover/link:text-sky-400'
-                        : 'text-slate-900 group-hover/link:text-sky-600'
+                        ? "text-white group-hover/link:text-sky-400"
+                        : "text-slate-900 group-hover/link:text-sky-600"
                     }`}
                   >
                     <span>{PERSONAL_INFO.email}</span>
-                    <FaExternalLinkAlt className="w-4 h-4 text-slate-400 group-hover/link:text-sky-400 transition-colors flex-shrink-0" />
+                    <FaExternalLinkAlt className="w-4 h-4 text-slate-400 group-hover/link:text-sky-400 transition-colors shrink-0" />
                   </a>
                 </div>
 
                 {/* Availability status badge */}
                 <div className="inline-flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-medium w-full shadow-sm">
-                  <span className="relative flex h-2 w-2 flex-shrink-0">
+                  <span className="relative flex h-2 w-2 shrink-0">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
                   </span>
@@ -176,7 +184,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
               </div>
 
               {/* Social Media Connections */}
-              <div className="relative z-10 pt-6 mt-6 border-t border-white/[0.08]">
+              <div className="relative z-10 pt-6 mt-6 border-t border-white/8">
                 <p className="text-xs text-slate-400 uppercase font-semibold tracking-wider mb-3.5">
                   Or connect with me on
                 </p>
@@ -188,11 +196,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                     rel="noopener noreferrer"
                     className={`flex-1 h-11 rounded-xl border flex items-center justify-center transition-all duration-200 hover:-translate-y-0.5 shadow-md group ${
                       isDark
-                        ? 'bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-sky-400 border-white/10 hover:border-sky-400/50'
-                        : 'bg-white hover:bg-slate-100 text-slate-600 hover:text-sky-600 border-slate-200'
+                        ? "bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-sky-400 border-white/10 hover:border-sky-400/50"
+                        : "bg-white hover:bg-slate-100 text-slate-600 hover:text-sky-600 border-slate-200"
                     }`}
                   >
-                    <FaGithub  className="w-4 h-4 transition-transform group-hover:scale-110" />
+                    <FaGithub className="w-4 h-4 transition-transform group-hover:scale-110" />
                   </a>
                   <a
                     aria-label="LinkedIn"
@@ -201,8 +209,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                     rel="noopener noreferrer"
                     className={`flex-1 h-11 rounded-xl border flex items-center justify-center transition-all duration-200 hover:-translate-y-0.5 shadow-md group ${
                       isDark
-                        ? 'bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-sky-400 border-white/10 hover:border-sky-400/50'
-                        : 'bg-white hover:bg-slate-100 text-slate-600 hover:text-sky-600 border-slate-200'
+                        ? "bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-sky-400 border-white/10 hover:border-sky-400/50"
+                        : "bg-white hover:bg-slate-100 text-slate-600 hover:text-sky-600 border-slate-200"
                     }`}
                   >
                     <FaLinkedin className="w-4 h-4 transition-transform group-hover:scale-110" />
@@ -214,8 +222,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                     rel="noopener noreferrer"
                     className={`flex-1 h-11 rounded-xl border flex items-center justify-center transition-all duration-200 hover:-translate-y-0.5 shadow-md group ${
                       isDark
-                        ? 'bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-sky-400 border-white/10 hover:border-sky-400/50'
-                        : 'bg-white hover:bg-slate-100 text-slate-600 hover:text-sky-600 border-slate-200'
+                        ? "bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-sky-400 border-white/10 hover:border-sky-400/50"
+                        : "bg-white hover:bg-slate-100 text-slate-600 hover:text-sky-600 border-slate-200"
                     }`}
                   >
                     <FaSquareXTwitter className="w-4 h-4 transition-transform group-hover:scale-110" />
@@ -232,8 +240,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
               onSubmit={handleSubmit}
               className={`p-6 md:p-8 rounded-2xl border space-y-5 shadow-2xl h-full flex flex-col justify-between card-glow relative overflow-hidden ${
                 isDark
-                  ? 'bg-[#0f1422] border-white/10'
-                  : 'bg-slate-50 border-slate-200 shadow-slate-100'
+                  ? "bg-[#0f1422] border-white/10"
+                  : "bg-slate-50 border-slate-200 shadow-slate-100"
               }`}
             >
               {/* Ambient glow inside form card */}
@@ -247,8 +255,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                     className="p-4 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 flex items-center justify-between gap-3 text-sm animate-in fade-in duration-300"
                   >
                     <div className="flex items-center gap-2">
-                      <FaCheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                      <span>Thank you! Your message has been sent successfully.</span>
+                      <FaCheckCircle className="w-5 h-5 text-emerald-400 shrink-0" />
+                      <span>
+                        Thank you! Your message has been sent successfully.
+                      </span>
                     </div>
                     <button
                       type="button"
@@ -266,7 +276,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                     <label
                       htmlFor="contact-name"
                       className={`block text-xs font-semibold uppercase tracking-wider mb-2 ${
-                        isDark ? 'text-slate-300' : 'text-slate-700'
+                        isDark ? "text-slate-300" : "text-slate-700"
                       }`}
                     >
                       Your Name
@@ -281,8 +291,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                       placeholder="John Doe"
                       className={`w-full px-4 py-3 rounded-xl border text-sm transition-colors focus:outline-none focus:ring-1 focus:ring-sky-400 ${
                         isDark
-                          ? 'bg-slate-900/90 border-white/10 text-white placeholder-slate-500 focus:border-sky-400'
-                          : 'bg-white border-slate-200 text-slate-900 placeholder-slate-400 focus:border-sky-500'
+                          ? "bg-slate-900/90 border-white/10 text-white placeholder-slate-500 focus:border-sky-400"
+                          : "bg-white border-slate-200 text-slate-900 placeholder-slate-400 focus:border-sky-500"
                       }`}
                     />
                   </div>
@@ -292,7 +302,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                     <label
                       htmlFor="contact-email"
                       className={`block text-xs font-semibold uppercase tracking-wider mb-2 ${
-                        isDark ? 'text-slate-300' : 'text-slate-700'
+                        isDark ? "text-slate-300" : "text-slate-700"
                       }`}
                     >
                       Your Email
@@ -307,8 +317,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                       placeholder="john@example.com"
                       className={`w-full px-4 py-3 rounded-xl border text-sm transition-colors focus:outline-none focus:ring-1 focus:ring-sky-400 ${
                         isDark
-                          ? 'bg-slate-900/90 border-white/10 text-white placeholder-slate-500 focus:border-sky-400'
-                          : 'bg-white border-slate-200 text-slate-900 placeholder-slate-400 focus:border-sky-500'
+                          ? "bg-slate-900/90 border-white/10 text-white placeholder-slate-500 focus:border-sky-400"
+                          : "bg-white border-slate-200 text-slate-900 placeholder-slate-400 focus:border-sky-500"
                       }`}
                     />
                   </div>
@@ -319,7 +329,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                   <label
                     htmlFor="contact-subject"
                     className={`block text-xs font-semibold uppercase tracking-wider mb-2 ${
-                      isDark ? 'text-slate-300' : 'text-slate-700'
+                      isDark ? "text-slate-300" : "text-slate-700"
                     }`}
                   >
                     Subject
@@ -331,13 +341,15 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                     onChange={handleInputChange}
                     className={`w-full px-4 py-3 rounded-xl border text-sm transition-colors focus:outline-none focus:ring-1 focus:ring-sky-400 cursor-pointer ${
                       isDark
-                        ? 'bg-slate-900/90 border-white/10 text-white focus:border-sky-400'
-                        : 'bg-white border-slate-200 text-slate-900 focus:border-sky-500'
+                        ? "bg-slate-900/90 border-white/10 text-white focus:border-sky-400"
+                        : "bg-white border-slate-200 text-slate-900 focus:border-sky-500"
                     }`}
                   >
                     <option value="project">New Project Collaboration</option>
                     <option value="hire">Job Opportunity / Full-time</option>
-                    <option value="consulting">Technical Advisory / Consulting</option>
+                    <option value="consulting">
+                      Technical Advisory / Consulting
+                    </option>
                     <option value="coffee">Casual Networking / Coffee</option>
                   </select>
                 </div>
@@ -347,7 +359,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                   <label
                     htmlFor="contact-message"
                     className={`block text-xs font-semibold uppercase tracking-wider mb-2 ${
-                      isDark ? 'text-slate-300' : 'text-slate-700'
+                      isDark ? "text-slate-300" : "text-slate-700"
                     }`}
                   >
                     Message
@@ -362,8 +374,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDark }) => {
                     placeholder="Hello Praful, I would love to discuss a project..."
                     className={`w-full px-4 py-3 rounded-xl border text-sm transition-colors resize-none focus:outline-none focus:ring-1 focus:ring-sky-400 ${
                       isDark
-                        ? 'bg-slate-900/90 border-white/10 text-white placeholder-slate-500 focus:border-sky-400'
-                        : 'bg-white border-slate-200 text-slate-900 placeholder-slate-400 focus:border-sky-500'
+                        ? "bg-slate-900/90 border-white/10 text-white placeholder-slate-500 focus:border-sky-400"
+                        : "bg-white border-slate-200 text-slate-900 placeholder-slate-400 focus:border-sky-500"
                     }`}
                   />
                 </div>
