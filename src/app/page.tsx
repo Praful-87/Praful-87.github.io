@@ -2,6 +2,9 @@
 import { useEffect, useState } from "react";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
+import { ExperienceSection } from "./components/ExperienceSection";
+import { SkillsSection } from "./components/SkillsSection";
+
 
 export default function Home() {
   const [isDark, setIsDark] = useState<boolean>(true);
@@ -33,9 +36,9 @@ export default function Home() {
       {/* Main Portfolio Content */}
       <main>
         <HeroSection isDark={isDark} />
-        {/* <ExperienceSection isDark={isDark} />
+        <ExperienceSection isDark={isDark} />
         <SkillsSection isDark={isDark} />
-        <ProjectShowcaseSection isDark={isDark} />
+        {/* <ProjectShowcaseSection isDark={isDark} />
         <ContactSection isDark={isDark} /> */}
       </main>
     </div>
