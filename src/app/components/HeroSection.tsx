@@ -4,7 +4,6 @@ import { FaGithub, FaLinkedin, FaExternalLinkAlt   } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { PERSONAL_INFO } from "../data/portfolioData";
 import { FiMail } from "react-icons/fi";
-
 import { IoMdMoon } from "react-icons/io";
 
 interface HeroSectionProps {

@@ -4,6 +4,7 @@ import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
 import { ExperienceSection } from "./components/ExperienceSection";
 import { SkillsSection } from "./components/SkillsSection";
+import { ProjectShowcaseSection } from "./components/ProjectShowcaseSection";
 
 
 export default function Home() {
@@ -38,8 +39,8 @@ export default function Home() {
         <HeroSection isDark={isDark} />
         <ExperienceSection isDark={isDark} />
         <SkillsSection isDark={isDark} />
-        {/* <ProjectShowcaseSection isDark={isDark} />
-        <ContactSection isDark={isDark} /> */}
+        <ProjectShowcaseSection isDark={isDark} />
+        {/* <ContactSection isDark={isDark} /> */}
       </main>
     </div>
   );
