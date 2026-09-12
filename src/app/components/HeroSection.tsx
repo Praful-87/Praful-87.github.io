@@ -58,7 +58,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Monogram Avatar with Subtle Glow */}
         <div className="relative mb-8 group" id="hero-avatar-container">
           <div className="absolute -inset-1.5 rounded-full bg-linear-to-r from-sky-500/30 to-indigo-500/30 blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-          <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full p-1 bg-linear-to-b from-sky-400/30 to-white/10 border-2 border-sky-400/30 shadow-2xl shadow-[0_0_25px_rgba(56,189,248,0.25)] overflow-hidden flex items-center justify-center">
+          <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full p-1 bg-linear-to-b from-sky-400/30 to-white/10 border-2 border-sky-400/30 shadow-2xl overflow-hidden flex items-center justify-center">
             <img
               id="hero-avatar-img"
               src={PERSONAL_INFO.avatarUrl}
@@ -83,10 +83,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </h1>
 
         {/* Typewriter Effect */}
-        <div className="inline-flex items-center justify-center min-h-[2.5rem] mb-6">
+        <div className="inline-flex items-center justify-center min-h-10 mb-6">
           <span
             id="typewriter-text"
-            className="text-xl md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-blue-500 tracking-tight"
+            className="text-xl md:text-2xl font-semibold text-transparent bg-clip-text bg-linear-to-r from-sky-400 via-cyan-300 to-blue-500 tracking-tight"
           >
             {displayText || "\u00A0"}
           </span>
@@ -134,7 +134,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="mb-10 flex justify-center">
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-sky-500/20 via-blue-500/20 to-sky-400/20 hover:from-sky-500/30 hover:to-blue-500/30 border border-sky-400/40 hover:border-sky-400 shadow-[0_0_20px_rgba(56,189,248,0.25)] hover:shadow-[0_0_25px_rgba(56,189,248,0.4)] transition-all duration-300 hover:-translate-y-0.5 active:scale-[0.98] group"
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-linear-to-r from-sky-500/20 via-blue-500/20 to-sky-400/20 hover:from-sky-500/30 hover:to-blue-500/30 border border-sky-400/40 hover:border-sky-400 shadow-[0_0_20px_rgba(56,189,248,0.25)] hover:shadow-[0_0_25px_rgba(56,189,248,0.4)] transition-all duration-300 hover:-translate-y-0.5 active:scale-[0.98] group"
           >
             <svg
               className="w-4 h-4 text-sky-400 group-hover:translate-y-0.5 transition-transform duration-200"

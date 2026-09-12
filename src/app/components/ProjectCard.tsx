@@ -27,7 +27,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     switch (project.previewType) {
       case "task-board":
         return (
-          <div className="h-48 bg-linear-to-br from-slate-900 via-[#131c31] to-[#0a0d14] relative p-3 flex flex-col justify-between border-b border-white/[0.08] overflow-hidden">
+          <div className="h-48 bg-linear-to-br from-slate-900 via-[#131c31] to-[#0a0d14] relative p-3 flex flex-col justify-between border-b border-white/8 overflow-hidden">
             <div className="absolute inset-0 bg-linear-to-tr from-sky-500/10 via-transparent to-indigo-500/10 opacity-60 group-hover:opacity-100 transition-opacity" />
 
             {/* Top file tab bar */}
