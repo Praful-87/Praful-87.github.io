@@ -1,4 +1,4 @@
-import { ExperienceItem } from "../types";
+import { ExperienceItem, Project, SkillItem } from "../types";
 
 export const PERSONAL_INFO = {
   name: "Praful Jadhao",

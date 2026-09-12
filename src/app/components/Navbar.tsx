@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { CiSun  } from "react-icons/ci";
 import { FiMail } from "react-icons/fi";
 import { IoIosMenu } from "react-icons/io";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
 
 import { PERSONAL_INFO } from '../data/portfolioData';
 
@@ -125,7 +127,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, onToggleTheme }) => {
                 : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
             }`}
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <IoIosMenu className="w-5 h-5" />}
+            {mobileMenuOpen ? <FaSquareXTwitter className="w-5 h-5" /> : <IoIosMenu className="w-5 h-5" />}
           </button>
         </div>
       </div>
