@@ -12,7 +12,6 @@ export interface Project {
   liveUrl: string;
   liveUrlLabel: string;
   accentColor: 'sky' | 'emerald' | 'blue';
-  previewType: 'task-board' | 'ecommerce-metrics' | 'portfolio-template' | 'weather-radar';
   details?: {
     overview: string;
     highlights: string[];
