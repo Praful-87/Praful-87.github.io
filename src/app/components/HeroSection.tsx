@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaGithub, FaLinkedin, FaExternalLinkAlt   } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaExternalLinkAlt } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { PERSONAL_INFO } from "../data/portfolioData";
 import { FiMail } from "react-icons/fi";
@@ -114,7 +114,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 : "bg-white border-slate-200 text-slate-700 shadow-slate-200/50"
             }`}
           >
-            <FaLocationDot  className="w-4 h-4 text-red-500" />
+            <FaLocationDot className="w-4 h-4 text-red-500" />
             {PERSONAL_INFO.location}
           </span>
 
@@ -134,7 +134,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
         <div className="mb-10 flex justify-center">
           <a
-            href="#contact"
+            href="https://drive.google.com/file/d/1HrqtLb_DpMDwgkV3vgh4WiHg6DeVOw_m/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-linear-to-r from-sky-500/20 via-blue-500/20 to-sky-400/20 hover:from-sky-500/30 hover:to-blue-500/30 border border-sky-400/40 hover:border-sky-400 shadow-[0_0_20px_rgba(56,189,248,0.25)] hover:shadow-[0_0_25px_rgba(56,189,248,0.4)] transition-all duration-300 hover:-translate-y-0.5 active:scale-[0.98] group"
           >
             <svg

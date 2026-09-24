@@ -6,6 +6,7 @@ import { ExperienceSection } from "./components/ExperienceSection";
 import { SkillsSection } from "./components/SkillsSection";
 import { ProjectShowcaseSection } from "./components/ProjectShowcaseSection";
 import { ContactSection } from "./components/ContactSection";
+import { Demo } from "./components/Demo";
 
 
 export default function Home() {
@@ -41,6 +42,7 @@ export default function Home() {
         <ExperienceSection isDark={isDark} />
         <SkillsSection isDark={isDark} />
         <ProjectShowcaseSection isDark={isDark} />
+        {/* <Demo/> */}
         <ContactSection isDark={isDark} />
       </main>
     </div>
