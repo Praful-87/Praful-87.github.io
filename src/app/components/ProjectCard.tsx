@@ -27,27 +27,24 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     switch (project.category) {
       case "completed":
         return (
-          <div className="h-48 bg-linear-to-br from-slate-900 via-[#142323] to-[#0a0d14] relative p-3 flex flex-col justify-between border-b border-white/8 overflow-hidden">
-            <div className="absolute inset-0 bg-linear-to-tr from-emerald-500/10 via-transparent to-teal-500/10 opacity-60 group-hover:opacity-100 transition-opacity" />
+          <div className="h-48  relative p-3 flex flex-col justify-between border-b border-white/8 overflow-hidden">
+            {/* <div className="absolute inset-0 bg-linear-to-tr from-emerald-500/10 via-transparent to-teal-500/10 opacity-60 group-hover:opacity-100 transition-opacity" /> */}
+            <img
+              src="https://cdn.dribbble.com/userupload/48297267/file/a8f3e40a9b9138a86ad35a656d1fdbb9.png?resize=1504x1128&vertical=center"
+              alt="Background"
+              className="absolute inset-0 w-full h-full object-cover z-0"
+            />
 
             <div className="relative flex items-center justify-between z-10">
               <div className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-red-500/80 inline-block" />
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block" />
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80 inline-block" />
-                <span className="ml-2 text-[10px] font-mono text-slate-400/80">
-                  {project.filename}
-                </span>
-              </div>
-              <div className="flex items-center gap-1.5">
                 {project.isFeatured && (
-                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-50 text-amber-800 border border-amber-200">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
                     Featured
                   </span>
                 )}
-                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping" />
                   Completed
                 </span>
               </div>
@@ -63,21 +60,19 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
       case "in-progress":
         return (
-          <div className="h-48 bg-linear-to-br from-slate-900 via-[#181d33] to-[#0a0d14] relative p-3 flex flex-col justify-between border-b border-white/8 overflow-hidden">
-            <div className="absolute inset-0 bg-linear-to-tr from-blue-500/10 via-transparent to-indigo-500/10 opacity-60 group-hover:opacity-100 transition-opacity" />
+          <div className="h-48 relative p-3 flex flex-col justify-between border-b border-white/8 overflow-hidden">
+            {/* <div className="absolute inset-0 bg-linear-to-tr from-blue-500/10 via-transparent to-indigo-500/10 opacity-60 group-hover:opacity-100 transition-opacity" /> */}
+            <img
+              src="https://cdn.dribbble.com/userupload/48297267/file/a8f3e40a9b9138a86ad35a656d1fdbb9.png?resize=1504x1128&vertical=center"
+              alt="Background"
+              className="absolute inset-0 w-full h-full object-cover z-0"
+            />
 
             <div className="relative flex items-center justify-between z-10">
+              <div className="flex items-center gap-1.5"></div>
               <div className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-red-500/80 inline-block" />
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block" />
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80 inline-block" />
-                <span className="ml-2 text-[10px] font-mono text-slate-400/80">
-                  {project.filename}
-                </span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-medium bg-blue-500/20 text-blue-300 border border-blue-500/30">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-medium bg-blue-500/20 text-black border border-blue-500/30">
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse " />
                   In Progress
                 </span>
               </div>
