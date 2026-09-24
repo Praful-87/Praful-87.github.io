@@ -13,8 +13,7 @@ export const PERSONAL_INFO = {
     "Passionate software engineer with 2.5+ years of experience building scalable web applications. I love solving complex problems and creating intuitive user experiences.",
   location: "Pune, IN",
   email: "prafuljadhao87@gmail.com",
-  avatarUrl:
-    "https://avatars.githubusercontent.com/u/103850217?v=4",
+  avatarUrl: "https://avatars.githubusercontent.com/u/103850217?v=4",
   socials: {
     github: "https://github.com/praful-87",
     linkedin: "https://linkedin.com/in/praful-jadhao/",
@@ -180,7 +179,6 @@ export const PROJECTS: Project[] = [
     liveUrl: "#",
     liveUrlLabel: "Live Demo",
     accentColor: "sky",
-    previewType: "task-board",
     details: {
       overview:
         "A full-featured Kanban and agile sprint planning tool featuring optimistic UI updates, multi-tenant team boards, and offline resilience.",
@@ -206,7 +204,6 @@ export const PROJECTS: Project[] = [
     liveUrl: "#",
     liveUrlLabel: "Live Demo",
     accentColor: "emerald",
-    previewType: "ecommerce-metrics",
     details: {
       overview:
         "High-converting digital storefront with sub-second product page loads, server-rendered dynamic catalogs, and PCI-compliant Stripe payment checkout.",
@@ -232,7 +229,6 @@ export const PROJECTS: Project[] = [
     liveUrl: "#",
     liveUrlLabel: "Preview WIP",
     accentColor: "blue",
-    previewType: "portfolio-template",
     details: {
       overview:
         "Engineered for maximum Core Web Vitals performance with light/dark theme toggles, accessible keyboard navigation, and responsive typography scaling.",
@@ -258,7 +254,6 @@ export const PROJECTS: Project[] = [
     liveUrl: "#",
     liveUrlLabel: "Live Demo",
     accentColor: "sky",
-    previewType: "weather-radar",
     details: {
       overview:
         "Interactive meteorological monitoring station displaying hyper-local 7-day forecasts, UV index, and precipitation radar overlays.",
