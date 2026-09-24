@@ -36,6 +36,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             />
 
             <div className="relative flex items-center justify-between z-10">
+              <div className="flex items-center gap-1.5"></div>
+
               <div className="flex items-center gap-1.5">
                 {project.isFeatured && (
                   <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-50 text-amber-800 border border-amber-200">
